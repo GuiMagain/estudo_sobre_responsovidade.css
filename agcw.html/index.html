@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Agência Criativa Web</title>
+        <link rel="stylesheet" href="estilos.css">
+        </head>
+            <body>
+                <header>
+                    <a href="#logo" class="logo">Agência Criativa Web</a>
+                    <button class="menu-btn">☰</button>
+                    <nav>
+                        <ul>
+                            <li><a href="#Home">Início</a></li>
+                            <li><a href="#Serviços">Serviços</a></li>
+                            <li><a href="#Sobre">Sobre</a></li>
+                            <li><a href="#Depoimentos">Depoimentos</a></li>
+                            <li><a href="#contato">Contato</a></li>
+                        </ul>
+                </nav>
+                </header>
+                <section id="Home">
+                    <h1>Bem-vindo à Agência Criativa Web</h1>
+                    <p>Sua parceira em soluções digitais inovadoras.</p>
+                </section>
+
+                <section id="Serviços">
+                    <h2>Nossos Serviços</h2>
+                    <ul>
+                        <li>Desenvolvimento de Sites</li>
+                        <li>Marketing Digital</li>
+                        <li>Design Gráfico</li>
+                        <li>Consultoria em SEO</li>
+                        <li>Branding</li>
+                    </ul>
+                </section>
+
+                <section id="Sobre">
+                <h2>Sobre Nós</h2>
+                <p>Na Agência Criativa Web, somos apaixonados por transformar ideias em realidade digital.</p>
+                
+                <img 
+                    src="https://placehold.co/800x400/18181b/white?text=Nossa+Equipe" 
+                    srcset="
+                        https://placehold.co/400x200/18181b/white?text=Equipe+Mobile 400w,
+                        https://placehold.co/800x400/18181b/white?text=Equipe+Desktop 800w
+                    "
+                    sizes="(max-width: 600px) 100vw, 800px"
+                    alt="Foto da equipe da Agência"
+                    style="width: 100%; height: auto; border-radius: 8px; margin-top: 1rem;"
+                >
+
+                <p style="margin-top: 1rem">Nossa missão é ajudar empresas a crescerem e prosperarem no ambiente online.</p>
+            </section>
+
+            <section id="Depoimentos">
+                <h2>O que nossos clientes dizem</h2>
+                
+                <div class="grid-depoimentos">
+                    
+                    <div class="depoimento">
+                        <p>"A Agência Criativa Web transformou nossa presença online. O site ficou incrível!"</p>
+                        <span>- Empresa ABC</span>
+                    </div>
+
+                    <div class="depoimento">
+                        <p>"O time é extremamente profissional. Entregaram além das expectativas."</p>
+                        <span>- Empresa XYZ</span>
+                    </div>
+                </div> </section>
+            <section id="contato">
+                <h2>Contato</h2>
+                <ul>
+                    <li>Email: contato@agenciaparacriativaweb.com.br</li>
+                    <li>Telefone: (11) 9999-9999</li>
+                    <li>Endereço: Rua Exemplo, 123, São Paulo, SP</li>
+                </ul>
+                <h2>Entre em contato:</h2>
+                    <form>
+                        <input type="text" placeholder="Nome">
+                        <input type="email" placeholder="Email">
+                        <textarea placeholder="Mensagem"></textarea>
+                        <button type="submit">Enviar</button>
+                    </form>
+            </section>
+
+    <script>
+
+    
+        const menuBtn = document.querySelector('.menu-btn');
+        const nav = document.querySelector('nav');
+
+        
+        menuBtn.addEventListener('click', () => {
+            
+            nav.classList.toggle('active');
+        });
+    </script>
+
+    <footer>
+    <p>&copy; 2024 Agência Criativa Web. Todos os direitos reservados.</p>
+    </footer>
+    
+    </body>
+</html>

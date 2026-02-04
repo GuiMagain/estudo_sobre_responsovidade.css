@@ -1,0 +1,18 @@
+@use 'variaveis' as *;
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: $fonte-principal;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: $cor-fundo-site;
+    color: $texto-claro;
+    line-height: 1.6;
+}

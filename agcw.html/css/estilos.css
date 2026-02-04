@@ -1,0 +1,183 @@
+@charset "UTF-8";
+/* Cores */
+/* Roxo */
+/* Verde Neon */
+/* Espaçamentos */
+/* Tipografia */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: #0f0f10;
+  color: #f4f4f5;
+  line-height: 1.6;
+}
+
+header {
+  background-color: #0f0f10;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2rem;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 1000;
+}
+header .logo {
+  font-size: 1.5rem;
+  color: #8b5cf6;
+  font-weight: bold;
+  text-decoration: none;
+}
+header nav .nav__lista {
+  display: flex;
+  list-style: none;
+  gap: 2rem;
+}
+header nav .nav__link {
+  color: #f4f4f5;
+  text-decoration: none;
+  font-size: 1rem;
+  transition: color 0.3s;
+}
+header nav .nav__link:hover {
+  color: #8b5cf6;
+}
+header .menu-btn {
+  padding: 1rem;
+  background-color: #8b5cf6;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: 0.3s;
+}
+header .menu-btn:hover {
+  background-color: #10b981;
+  color: black;
+}
+header .menu-btn {
+  display: none;
+  font-size: 2rem;
+  background: none;
+  margin-left: 1rem;
+}
+
+/* === Seção Hero (#home) === */
+/* CORREÇÃO: Mudamos de #Home para #home (minúsculo) para bater com o HTML */
+#home {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background: radial-gradient(circle at center, #1f1f25 0%, #0f0f10 70%);
+}
+#home h1 {
+  font-size: 3.5rem;
+  margin-bottom: 1rem;
+}
+@media (max-width: 768px) {
+  #home h1 {
+    font-size: 2.5rem;
+  }
+}
+
+/* === Estrutura Geral de Seções === */
+section {
+  padding: 4rem 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+h2 {
+  font-size: 2.5rem;
+  text-align: center;
+  margin-bottom: 3rem;
+  color: #8b5cf6;
+}
+@media (max-width: 768px) {
+  h2 {
+    font-size: 2rem;
+  }
+}
+
+/* === Seção de Serviços e Depoimentos === */
+/* CORREÇÃO: Mudamos de #Serviços para #servicos (sem cedilha) */
+#servicos ul, .grid-depoimentos {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+  list-style: none;
+}
+
+/* CORREÇÃO: Aqui também, #servicos */
+#servicos li, .depoimento {
+  background-color: #18181b;
+  padding: 2rem;
+  border-radius: 8px;
+  border: 1px solid rgba(255, 255, 255, 0.05);
+  text-align: center;
+  transition: transform 0.3s;
+}
+#servicos li:hover, .depoimento:hover {
+  transform: translateY(-5px);
+  border-color: #8b5cf6;
+}
+
+.depoimento span {
+  display: block;
+  margin-top: 1rem;
+  color: #10b981;
+  font-size: 0.9rem;
+}
+
+#contato ul {
+  list-style: none;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+/* === Formulário de Contato === */
+form {
+  max-width: 600px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+form input, form textarea {
+  padding: 1rem;
+  background: #27272a;
+  border: none;
+  color: white;
+  border-radius: 5px;
+}
+form button {
+  padding: 1rem;
+  background-color: #8b5cf6;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: 0.3s;
+}
+form button:hover {
+  background-color: #10b981;
+  color: black;
+}
+
+/*# sourceMappingURL=estilos.css.map */

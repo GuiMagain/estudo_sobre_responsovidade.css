@@ -1,0 +1,50 @@
+@use 'mixins' as *;
+@use 'variaveis' as *;
+
+header {
+    background-color: $cor-fundo-site;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: $espacamento-grande;
+    position: fixed;
+    width: 100%; 
+    top: 0;
+    z-index: 1000;
+
+    .logo {
+        font-size: $tamanho-titulo;
+        color: $cor-primaria;
+        font-weight: bold;
+        text-decoration: none;
+    }
+
+    nav {
+        .nav__lista {
+            display: flex;
+            list-style: none;
+            gap: $espacamento-grande;
+        }
+
+        .nav__link {
+            color: $texto-claro;
+            text-decoration: none;
+            font-size: $tamanho-fonte-padrao;
+            transition: color 0.3s;
+
+            &:hover {
+                color: $cor-primaria;
+            }
+        }
+    }
+
+    .menu-btn {
+        @include estilo-botao;
+        display: none; 
+        font-size: 2rem;
+        background: none;
+        margin-left: $espacamento-padrao;
+    }
+}

@@ -1,0 +1,31 @@
+@use 'variaveis' as *;
+
+@mixin estilo-card {
+    background-color: $cor-fundo-card;
+    padding: $espacamento-grande;
+    border-radius: 8px;
+    border: 1px solid rgba(255, 255, 255, 0.05);
+    text-align: center;
+    transition: transform 0.3s;
+
+    &:hover {
+        transform: translateY(-5px);
+        border-color: $cor-primaria;
+    }
+}
+
+@mixin estilo-botao {
+    padding: $espacamento-padrao;
+    background-color: $cor-primaria;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: 0.3s;
+
+    &:hover {
+        background-color: $cor-destaque;
+        color: black;
+    }
+}
